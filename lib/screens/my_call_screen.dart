@@ -74,17 +74,21 @@ class _MyCallState extends State<MyCall> {
                               );
                             },
                           ),
+                          // sacar video cuando sea 3 integrantes
                           Align(
                             alignment: Alignment.topRight,
-                            child: SizedBox(
-                              height: MediaQuery.of(context).size.height / 2.4,
-                              width: MediaQuery.of(context).size.width / 2.2,
-                              child: const AspectRatio(
-                                aspectRatio:
-                                    1, // Esto mantiene una relación de aspecto de 16:9
-                                child: VideoPlayerScreen(
-                                  videoUrl: 'assets/videos/reformat.mp4',
-                                  radius: 0.0,
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(3, 3, 0, 0),
+                              child: SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height / 2.25,
+                                width: MediaQuery.of(context).size.width / 2,
+                                child: const AspectRatio(
+                                  aspectRatio: 1,
+                                  child: VideoPlayerScreen(
+                                    videoUrl: 'assets/videos/reformat.mp4',
+                                    radius: 0.0,
+                                  ),
                                 ),
                               ),
                             ),
