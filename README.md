@@ -1,4 +1,4 @@
-# flutter_application_1
+# SO-I
 
 A new Flutter project.
 
@@ -18,4 +18,4 @@ samples, guidance on mobile development, and a full API reference.
 ## Generar apk con el siguiente comando
 
 flutter build apk --split-per-abi
-# SO-I
+
